@@ -1,8 +1,10 @@
-#  ベースイメージの設定
-FROM ubuntu:17.10
+# 베이스 이미지 설정
+# 17.10 version not build
+# change ubuntu lastes version
+FROM ubuntu
 
 # Nginx のインストール
-RUN apt-get -y update && apt-get -y upgrade 
+RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install nginx
 
 #  ポート指定
